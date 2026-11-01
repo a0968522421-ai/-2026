@@ -505,8 +505,6 @@ function showEgg(e){
     el("div",{class:"egg-card"},
       el("span",{class:"label",text:`彩蛋禮物 · 完成 ${e.p}%`}),
       el("img",{src:EGG_IMG[String(e.p)], alt:e.title}),
-      el("h2",{text:e.title}),
-      el("p",{text:e.text}),
       el("button",{class:"primary", id:"egg-ok", onclick:close, text:"收下禮物"})));
   document.body.append(ov); document.addEventListener("keydown", onKey);
   ov.querySelector("#egg-ok").focus();
